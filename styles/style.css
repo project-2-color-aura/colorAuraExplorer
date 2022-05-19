@@ -220,3 +220,30 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
