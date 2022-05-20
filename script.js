@@ -19,6 +19,14 @@ colorApp.init = () => {
     colorApp.getUserChoice();
 }
 
+colorApp.getUserChoice = () => {
+    const moodButton = document.querySelector('.moodUl');
+    this.addEventListener('click', function (event) {
+        const hueChoice = `/api/random/${event.target.value}`;
+        colorApp.getColors(hueChoice);
+    });
+}
+
 colorApp.getColors = (userChoice) => {
     const colorApiUrl = new URL(colorApp.endpoint);
     colorApiUrl.pathname = userChoice;
@@ -32,24 +40,24 @@ colorApp.getColors = (userChoice) => {
             return response.json();
         })
         .then((jsonData) => {
-            console.log(jsonData);
-            document.querySelector('h1').style.color = jsonData.hex;
-            //call displayColors function
+            // console.log(jsonData);
+            // document.querySelector('h1').style.color = jsonData.hex;
+            colorApp.displayColors(jsonData);
         })
-}
-
-colorApp.getUserChoice = () => {
-    const moodButton = document.querySelector('.moodUl');
-    this.addEventListener('click', function (event) {
-        const hueChoice = `/api/random/${event.target.value}`;
-        colorApp.getColors(hueChoice);
-    });
 }
 
 colorApp.displayColors = (arrayOfColors) => {
     console.log(arrayOfColors);
-    const color1 = arrayOfColors[0].hex;
-    document.querySelector('div').style.backgroundColor = color1;
+    const colorHex0 = arrayOfColors[0].hex;
+    document.querySelector('.color0').style.backgroundColor = colorHex0;
+    const colorHex1 = arrayOfColors[1].hex;
+    document.querySelector('.color1').style.backgroundColor = colorHex1;
+    const colorHex2 = arrayOfColors[2].hex;
+    document.querySelector('.color2').style.backgroundColor = colorHex2;
+    const colorHex3 = arrayOfColors[3].hex;
+    document.querySelector('.color3').style.backgroundColor = colorHex3;
+    const colorHex4 = arrayOfColors[4].hex;
+    document.querySelector('.color4').style.backgroundColor = colorHex4;    
 }
 
 colorApp.init();

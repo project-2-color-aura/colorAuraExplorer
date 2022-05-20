@@ -247,3 +247,15 @@ a {
   color: inherit;
   display: inline-block;
 }
+
+.paletteParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color {
+  height: 200px;
+  width: 200px;
+  border: 1px solid;
+}
