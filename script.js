@@ -13,41 +13,62 @@
 // namespace object:
 const colorApp = {};
 
+colorApp.paragraphs = {
+    red: `red paragraph`,
+    pink: `pink para`,
+    purple: `purple para`,
+    navy: `navy para`,
+    blue: `blue para`,
+    aqua: 'aqua para',
+    green: 'green para',
+    lime: 'lime para',
+    yellow: 'yellow para',
+    orange: 'orange para'
+}
+
 colorApp.endpoint = 'https://x-colors.herokuapp.com';
 
 colorApp.init = () => {
     colorApp.getUserChoice();
 }
 
-colorApp.getUserChoice = () => {
-    const moodButton = document.querySelector('.moodUl');
-    this.addEventListener('click', function (event) {
-        const hueChoice = `/api/random/${event.target.value}`;
-        colorApp.getColors(hueChoice);
+colorApp.getUserChoice = function() {
+    const moodButton = document.querySelectorAll('.moods');
+    moodButton.forEach( (button) => {
+        button.addEventListener('click', function (event) {
+            const hueChoice = `/api/random/${event.target.value}`;
+            const buttonValue = event.target.value;
+            colorApp.getColors(hueChoice);
+            const advicePara = document.querySelector('.colorParagraph');
+            advicePara.innerHTML = (colorApp.paragraphs[buttonValue]);
+    });
     });
 }
 
 colorApp.getColors = (userChoice) => {
     const colorApiUrl = new URL(colorApp.endpoint);
     colorApiUrl.pathname = userChoice;
-    console.log(colorApiUrl);
     colorApiUrl.search = new URLSearchParams({
         number: 5,
         type: 'dark'
     })
     fetch(colorApiUrl)
         .then((response) => {
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("Sorry! Color Aura is experiencing technical difficulties!");
+            } 
         })
         .then((jsonData) => {
-            // console.log(jsonData);
-            // document.querySelector('h1').style.color = jsonData.hex;
             colorApp.displayColors(jsonData);
+        })
+        .catch((errorResponse) => {
+            alert(errorResponse);
         })
 }
 
 colorApp.displayColors = (arrayOfColors) => {
-    console.log(arrayOfColors);
     const colorHex0 = arrayOfColors[0].hex;
     document.querySelector('.color0').style.backgroundColor = colorHex0;
     const colorHex1 = arrayOfColors[1].hex;
@@ -58,6 +79,7 @@ colorApp.displayColors = (arrayOfColors) => {
     document.querySelector('.color3').style.backgroundColor = colorHex3;
     const colorHex4 = arrayOfColors[4].hex;
     document.querySelector('.color4').style.backgroundColor = colorHex4;    
+
 }
 
 colorApp.init();
