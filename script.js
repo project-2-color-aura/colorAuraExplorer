@@ -26,7 +26,7 @@ colorApp.paragraphs = {
     orange: 'orange para'
 }
 
-colorApp.endpoint = 'https://www.thecolorapi.com/';
+colorApp.endpoint = 'https://www.thecolorapi.com/scheme?';
 
 colorApp.init = () => {
     colorApp.getUserChoice();
