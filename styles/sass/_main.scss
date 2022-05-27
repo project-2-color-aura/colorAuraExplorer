@@ -1,11 +1,58 @@
+.allButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moodUl {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.moodUl li {
+    // min-width: calc(100%/5);
+    text-align: center;
+}
+
 .paletteParent {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .color {
-    height: 200px;
-    width: 200px;
-    border: 1px solid
+    height: 235px;
+    width: 235px;
+    margin: 0 5px 0 0;
+}
+
+.color0 {
+    background-color: rgb(73, 75, 76);
+}
+
+.color1 {
+    background-color: rgb(97, 101, 103);
+}
+
+.color2 {
+    background-color: rgb(121, 127, 131);
+}
+
+.color3 {
+    background-color: rgb(146, 152, 156);
+}
+
+.color4 {
+    background-color: rgb(172, 178, 181);
+}
+
+.colorParagraphContainer {
+    text-align: center;
+}
+
+.reset {
+    height: 50%;
+    padding: 20px 10px;
 }

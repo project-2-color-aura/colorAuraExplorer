@@ -24,6 +24,8 @@ colorApp.paragraphs = {
     '00FF00': `lime para`,
     FFFF00: `yellow para`,
     FF8C00: `orange para`,
+    F5F5DC: 'beige para',
+    '708090': 'slate para',
     '888B8D': ""
 }
 
@@ -41,6 +43,9 @@ colorApp.getUserChoice = function() {
             colorApp.getColors(buttonValue);
             const advicePara = document.querySelector('.colorParagraph');
             advicePara.innerHTML = (colorApp.paragraphs[buttonValue]);
+            const colorTitle = document.querySelector('.colorTitle');
+            const mood = event.target.id;
+            colorTitle.innerHTML = (`${mood}`);
     });
     });
 }
@@ -49,6 +54,7 @@ colorApp.getColors = (userChoice) => {
     const colorApiUrl = new URL(colorApp.endpoint);
     colorApiUrl.search = new URLSearchParams({
         hex: userChoice,
+        // mode: 'monochrome-light'
     })
     fetch(colorApiUrl)
         .then((response) => {
@@ -78,6 +84,7 @@ const colorHex0 = arrayOfColors['colors'][0]['hex']['value'];
     const colorHex4 = arrayOfColors['colors'][4]['hex']['value'];
     document.querySelector('.color4').style.backgroundColor = colorHex4;    
     document.querySelector('header').style.background = `linear-gradient(135deg, ${colorHex0}, ${colorHex2}, ${colorHex4})`;
+    document.querySelector('footer').style.background = `linear-gradient(135deg, ${colorHex0}, ${colorHex2}, ${colorHex4})`;
 }
 
 colorApp.init();

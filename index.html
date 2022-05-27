@@ -4,32 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Color Aura</title>
+    <title>Color Aura Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Kanit&family=Poppins:wght@300;400&family=Spectral&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <h1>My Color Aura</h1>
+            <h1>Color Aura Explorer</h1>
         </div>
     </header>
     <main>
         <div class="wrapper">
-            <section>
-                <ul class="moodUl">
-                    <li><button class="moods" value="DC143C">stressed</button></li>
-                    <li><button class="moods" value="FFC0CB">romantic</button></li>
-                    <li><button class="moods" value="663399">powerful</button></li>
-                    <li><button class="moods" value="000080">mysterious</button></li>
-                    <li><button class="moods" value="4682B4">melancholic</button></li>
-                    <li><button class="moods" value="00FFFF">peaceful</button></li>
-                    <li><button class="moods" value="228B22">healthy</button></li>
-                    <li><button class="moods" value="00FF00">balanced</button></li>
-                    <li><button class="moods" value="FFFF00">joyful</button></li>
-                    <li><button class="moods" value="FF8C00">energetic</button></li>
-                </ul>
-                <button class="reset moods" value="888B8D">RESET</button>
-            </section>
             <section class="results">
                 <h2>Your color aura palette:</h2>
                 <div class="paletteParent">
@@ -40,8 +28,26 @@
                     <div class="color4 color"></div>
                 </div>
                 <div class="colorParagraphContainer">
-                <p class="colorParagraph"></p>
+                    <h2 class="colorTitle"></h2>
+                    <p class="colorParagraph"></p>
                 </div>
+            </section>
+            <section class="allButtons">
+                <ul class="moodUl">
+                    <li><button class="moods" value="DC143C" id="Stressed">stressed</button></li>
+                    <li><button class="moods" value="FFC0CB" id="Romantic">romantic</button></li>
+                    <li><button class="moods" value="663399" id="Powerful">powerful</button></li>
+                    <li><button class="moods" value="000080" id="Mysterious">mysterious</button></li>
+                    <li><button class="moods" value="4682B4" id="Melancholic">melancholic</button></li>
+                    <li><button class="moods" value="00FFFF" id="Peaceful">peaceful</button></li>
+                    <li><button class="moods" value="228B22" id="Healthy">healthy</button></li>
+                    <li><button class="moods" value="00FF00" id="Balanced">balanced</button></li>
+                    <li><button class="moods" value="FFFF00" id="Joyful">joyful</button></li>
+                    <li><button class="moods" value="FF8C00" id="Energetic">energetic</button></li>
+                    <li><button class="moods" value="F5F5DC" id="Apathetic">apathetic</button></li>
+                    <li><button class="moods" value="708090" id="Lethargic">lethargic</button></li>
+                </ul>
+                <button class="reset moods" value="888B8D">RESET</button>
             </section>
         </div>
     </main>
