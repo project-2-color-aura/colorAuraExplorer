@@ -37,7 +37,7 @@ colorApp.getUserChoice = function() {
     moodButton.forEach( (button) => {
         button.addEventListener('click', function (event) {
             const buttonValue = event.target.value;
-            colorApp.getColors(hueChoice);
+            colorApp.getColors(buttonValue);
             const advicePara = document.querySelector('.colorParagraph');
             advicePara.innerHTML = (colorApp.paragraphs[buttonValue]);
     });
