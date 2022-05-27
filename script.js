@@ -58,7 +58,6 @@ colorApp.getColors = (userChoice) => {
             } 
         })
         .then((jsonData) => {
-            console.log(jsonData)
 colorApp.displayColors(jsonData);
         })
         .catch((errorResponse) => {
