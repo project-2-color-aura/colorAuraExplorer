@@ -26,7 +26,7 @@ colorApp.paragraphs = {
     orange: 'orange para'
 }
 
-colorApp.endpoint = 'https://x-colors.herokuapp.com';
+colorApp.endpoint = 'https://www.thecolorapi.com/';
 
 colorApp.init = () => {
     colorApp.getUserChoice();
@@ -36,7 +36,7 @@ colorApp.getUserChoice = function() {
     const moodButton = document.querySelectorAll('.moods');
     moodButton.forEach( (button) => {
         button.addEventListener('click', function (event) {
-            const hueChoice = `/api/random/${event.target.value}`;
+            const hueChoice = `/scheme`;
             const buttonValue = event.target.value;
             colorApp.getColors(hueChoice);
             const advicePara = document.querySelector('.colorParagraph');
@@ -49,8 +49,7 @@ colorApp.getColors = (userChoice) => {
     const colorApiUrl = new URL(colorApp.endpoint);
     colorApiUrl.pathname = userChoice;
     colorApiUrl.search = new URLSearchParams({
-        number: 5,
-        type: 'dark'
+        hex: `${event.target.value}`,
     })
     fetch(colorApiUrl)
         .then((response) => {
@@ -61,25 +60,26 @@ colorApp.getColors = (userChoice) => {
             } 
         })
         .then((jsonData) => {
-            colorApp.displayColors(jsonData);
+            console.log(jsonData)
+            // colorApp.displayColors(jsonData);
         })
         .catch((errorResponse) => {
             alert(errorResponse);
         })
 }
 
-colorApp.displayColors = (arrayOfColors) => {
-    const colorHex0 = arrayOfColors[0].hex;
-    document.querySelector('.color0').style.backgroundColor = colorHex0;
-    const colorHex1 = arrayOfColors[1].hex;
-    document.querySelector('.color1').style.backgroundColor = colorHex1;
-    const colorHex2 = arrayOfColors[2].hex;
-    document.querySelector('.color2').style.backgroundColor = colorHex2;
-    const colorHex3 = arrayOfColors[3].hex;
-    document.querySelector('.color3').style.backgroundColor = colorHex3;
-    const colorHex4 = arrayOfColors[4].hex;
-    document.querySelector('.color4').style.backgroundColor = colorHex4;    
+// colorApp.displayColors = (arrayOfColors) => {
+//     const colorHex0 = arrayOfColors[0].hex;
+//     document.querySelector('.color0').style.backgroundColor = colorHex0;
+//     const colorHex1 = arrayOfColors[1].hex;
+//     document.querySelector('.color1').style.backgroundColor = colorHex1;
+//     const colorHex2 = arrayOfColors[2].hex;
+//     document.querySelector('.color2').style.backgroundColor = colorHex2;
+//     const colorHex3 = arrayOfColors[3].hex;
+//     document.querySelector('.color3').style.backgroundColor = colorHex3;
+//     const colorHex4 = arrayOfColors[4].hex;
+//     document.querySelector('.color4').style.backgroundColor = colorHex4;    
 
-}
+// }
 
 colorApp.init();
