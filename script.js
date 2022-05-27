@@ -79,7 +79,7 @@ colorApp.displayColors = (arrayOfColors) => {
     document.querySelector('.color3').style.backgroundColor = colorHex3;
     const colorHex4 = arrayOfColors[4].hex;
     document.querySelector('.color4').style.backgroundColor = colorHex4;    
-    document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0})`;
+    document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0}, ${colorHex2}, ${colorHex4})`;
 }
 
 colorApp.init();
