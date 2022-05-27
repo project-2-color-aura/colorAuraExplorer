@@ -248,6 +248,11 @@ a {
   display: inline-block;
 }
 
+header {
+  height: 400px;
+  background: linear-gradient(135deg, white, grey);
+}
+
 .paletteParent {
   display: -webkit-box;
   display: -ms-flexbox;

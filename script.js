@@ -74,6 +74,7 @@ const colorHex0 = arrayOfColors['colors'][0]['hex']['value'];
     document.querySelector('.color2').style.backgroundColor = colorHex2;
     const colorHex3 = arrayOfColors['colors'][3]['hex']['value'];
     document.querySelector('.color3').style.backgroundColor = colorHex3;
+<<<<<<< HEAD
     const colorHex4 = arrayOfColors['colors'][4]['hex']['value'];
     document.querySelector('.color4').style.backgroundColor = colorHex4;
     document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0}, ${colorHex1}, ${colorHex2})`;
@@ -90,5 +91,11 @@ const colorHex0 = arrayOfColors['colors'][0]['hex']['value'];
 //     document.querySelector('.color4').style.backgroundColor = colorHex4;    
 
 // }
+=======
+    const colorHex4 = arrayOfColors[4].hex;
+    document.querySelector('.color4').style.backgroundColor = colorHex4;    
+    document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0}, ${colorHex2}, ${colorHex4})`;
+}
+>>>>>>> 331c7e1e76ef0866209b7459dacbe2c0ed082a4c
 
 colorApp.init();
