@@ -48,7 +48,7 @@ colorApp.getColors = (userChoice) => {
     const colorApiUrl = new URL(colorApp.endpoint);
     colorApiUrl.pathname = userChoice;
     colorApiUrl.search = new URLSearchParams({
-        hex: `${event.target.value}`,
+        hex: userChoice,
     })
     fetch(colorApiUrl)
         .then((response) => {
