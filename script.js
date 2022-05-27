@@ -14,16 +14,17 @@
 const colorApp = {};
 
 colorApp.paragraphs = {
-    red: `red paragraph`,
-    pink: `pink para`,
-    purple: `purple para`,
-    navy: `navy para`,
-    blue: `blue para`,
-    aqua: 'aqua para',
-    green: 'green para',
-    lime: 'lime para',
-    yellow: 'yellow para',
-    orange: 'orange para'
+    DC143C: `red paragraph`,
+    FFC0CB: `pink para`,
+    663399: `purple para`,
+    '000080': `navy para`,
+    '4682B4': `blue para`,
+    '00FFFF': `aqua para`,
+    '228B22': `green para`,
+    '00FF00': `lime para`,
+    FFFF00: `yellow para`,
+    FF8C00: `orange para`,
+    '888B8D': ""
 }
 
 colorApp.endpoint = 'https://www.thecolorapi.com/scheme?';
@@ -74,28 +75,9 @@ const colorHex0 = arrayOfColors['colors'][0]['hex']['value'];
     document.querySelector('.color2').style.backgroundColor = colorHex2;
     const colorHex3 = arrayOfColors['colors'][3]['hex']['value'];
     document.querySelector('.color3').style.backgroundColor = colorHex3;
-<<<<<<< HEAD
     const colorHex4 = arrayOfColors['colors'][4]['hex']['value'];
-    document.querySelector('.color4').style.backgroundColor = colorHex4;
-    document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0}, ${colorHex1}, ${colorHex2})`;
- }
-//     const colorHex0 = arrayOfColors[0].hex;
-//     document.querySelector('.color0').style.backgroundColor = colorHex0;
-//     const colorHex1 = arrayOfColors[1].hex;
-//     document.querySelector('.color1').style.backgroundColor = colorHex1;
-//     const colorHex2 = arrayOfColors[2].hex;
-//     document.querySelector('.color2').style.backgroundColor = colorHex2;
-//     const colorHex3 = arrayOfColors[3].hex;
-//     document.querySelector('.color3').style.backgroundColor = colorHex3;
-//     const colorHex4 = arrayOfColors[4].hex;
-//     document.querySelector('.color4').style.backgroundColor = colorHex4;    
-
-// }
-=======
-    const colorHex4 = arrayOfColors[4].hex;
     document.querySelector('.color4').style.backgroundColor = colorHex4;    
-    document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0}, ${colorHex2}, ${colorHex4})`;
+    document.querySelector('header').style.background = `linear-gradient(135deg, ${colorHex0}, ${colorHex2}, ${colorHex4})`;
 }
->>>>>>> 331c7e1e76ef0866209b7459dacbe2c0ed082a4c
 
 colorApp.init();
