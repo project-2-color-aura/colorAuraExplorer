@@ -66,7 +66,19 @@ colorApp.displayColors(jsonData);
         })
 }
 
-// colorApp.displayColors = (arrayOfColors) => {
+colorApp.displayColors = (arrayOfColors) => {
+const colorHex0 = arrayOfColors['colors'][0]['hex']['value'];
+    document.querySelector('.color0').style.backgroundColor = colorHex0;
+    const colorHex1 = arrayOfColors['colors'][1]['hex']['value'];
+    document.querySelector('.color1').style.backgroundColor = colorHex1;
+    const colorHex2 = arrayOfColors['colors'][2]['hex']['value'];
+    document.querySelector('.color2').style.backgroundColor = colorHex2;
+    const colorHex3 = arrayOfColors['colors'][3]['hex']['value'];
+    document.querySelector('.color3').style.backgroundColor = colorHex3;
+    const colorHex4 = arrayOfColors['colors'][4]['hex']['value'];
+    document.querySelector('.color4').style.backgroundColor = colorHex4;
+    document.querySelector('header').style.background = `linear-gradient(135deg, white, ${colorHex0}, ${colorHex1}, ${colorHex2})`;
+ }
 //     const colorHex0 = arrayOfColors[0].hex;
 //     document.querySelector('.color0').style.backgroundColor = colorHex0;
 //     const colorHex1 = arrayOfColors[1].hex;
