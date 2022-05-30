@@ -51,6 +51,7 @@ colorApp.getUserChoice = function() {
             colorApp.getColors(buttonValue);
             const advicePara = document.querySelector('.colorParagraph');
             advicePara.innerHTML = (colorApp.paragraphs[buttonValue]);
+            advicePara.focus();
             const colorTitle = document.querySelector('.colorTitle');
             const mood = event.target.id;
             colorTitle.innerHTML = (`${mood}`);

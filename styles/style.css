@@ -254,10 +254,9 @@ a {
 
 button {
   font-family: "Archivo", sans-serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 1.3rem;
   width: 230px;
-  height: 160px;
+  height: 130px;
   margin: 20px;
   background-color: linear-gradient(135deg, white, grey);
   border: none;
@@ -290,13 +289,20 @@ h1 {
   text-shadow: 2px 0 0 black;
 }
 
+.colorParagraph {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1.2;
+  line-height: 2rem;
+}
+
 footer {
   color: white;
   font-size: 1.3rem;
 }
 
 header {
-  height: 200px;
+  min-height: 150px;
   background: linear-gradient(135deg, white, grey);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +387,7 @@ h1 {
 
 .colorParagraphContainer {
   text-align: center;
+  min-height: 400px;
 }
 
 .reset {
