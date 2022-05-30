@@ -16,7 +16,7 @@ const colorApp = {};
 colorApp.paragraphs = {
     DC143C: `Your stressed out mood evokes red hues from the Color Aura Explorer. What’s stressing you out? Allow your stressful thought to pass by like a cloud floating in the sky. Take a deep breath. Count to 3, then exhale. How do you feel? The Color Aura Explorer encourages you to wear green to balance out the red hues you’re evoking. Alternatively: let your feet touch grass, water your plants, or drink a green juice or smoothie. `,
 
-    FFC0CB: `pink paraYour romantic mood carries pink hues from the Color Aura Explorer. There’s no harm in emitting a loving spirit towards a friend, people in your orbit, or the people in your community. Are you wondering where to put this romantic energy? 
+    FFC0CB: `Your romantic mood carries pink hues from the Color Aura Explorer. There’s no harm in emitting a loving spirit towards a friend, people in your orbit, or the people in your community. Are you wondering where to put this romantic energy? 
     The Colour Aura explorer believes that romance is more than expression of love; it’s an expression of care and nurturing towards the things and people that support you. Have you considered volunteering, helping a friend with a task, or doing something thoughtful for someone? Or remind someone why you love them!`,
     
     663399: `Your powerful mood brings forth purple hues from the Color Aura Explorer. There are ways to harness this powerful energy into creating a mighty day. Push yourself during your next workout until you feel the burn. Once you feel it— keep going! 
