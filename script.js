@@ -14,11 +14,18 @@
 const colorApp = {};
 
 colorApp.paragraphs = {
-    DC143C: `red paragraph`,
-    FFC0CB: `pink para`,
-    663399: `purple para`,
-    '000080': `navy para`,
-    '4682B4': `blue para`,
+    DC143C: `Your stressed out mood evokes red hues from the Color Aura Explorer. What’s stressing you out? Allow your stressful thought to pass by like a cloud floating in the sky. Take a deep breath. Count to 3, then exhale. How do you feel? The Color Aura Explorer encourages you to wear green to balance out the red hues you’re evoking. Alternatively: let your feet touch grass, water your plants, or drink a green juice or smoothie. `,
+
+    FFC0CB: `pink paraYour romantic mood carries pink hues from the Color Aura Explorer. There’s no harm in emitting a loving spirit towards a friend, people in your orbit, or the people in your community. Are you wondering where to put this romantic energy? 
+    The Colour Aura explorer believes that romance is more than expression of love; it’s an expression of care and nurturing towards the things and people that support you. Have you considered volunteering, helping a friend with a task, or doing something thoughtful for someone? Or remind someone why you love them!`,
+    
+    663399: `Your powerful mood brings forth purple hues from the Color Aura Explorer. There are ways to harness this powerful energy into creating a mighty day. Push yourself during your next workout until you feel the burn. Once you feel it— keep going! 
+    If pushing your body to the limit isn’t an option, that’s OK. Take the time to donate to your local food bank or influence others to support an non-profit organization you care about.
+    Or, simply, extend your powerful mood to a person that needs a little motivation; if a friend is feeling a little down, give them a solid pep talk.`,
+
+    '000080': `Your mysterious mood evokes navy hues from the Color Aura Explorer. What an enigmatic feeling and color! Voltaire once said, “the secret to being a bore is to tell everything”.  This marks an opportunity for reflection. What are you withholding within yourself? Is this a positive or negative element in your life? If it’s positive, why? If it’s negative, also ask yourself why. There are no right answers to your “why’s”. The meaning of your inner mystery is to practice introspection. Channel your inner mystery by expressing yourself in abstract ways: paint, journal, or write poetry. `,
+    
+    '4682B4': `Your melancholic mood carries blue hues from the Color Aura Explorer. First and foremost, the Color Aura Explorer is sorry you’re feeling melancholic.  Allow yourself to feel it, but remember: you can, and will feel happiness again. The path to happiness can be long and non-linear. Think about the things or people in your life that inspire you. Attempt to reconnect with these aspects again. Sometimes being sad makes this reconnection difficult, but keep trying.  Re-read a book that you love, listen to your favourite album, watch a new TV show, or go for a walk outside. Or, don’t be afraid to talk to someone you trust about your sorrows. Sometimes, having someone listen is the cure for a melancholic spirit.`,
 
     '00FFFF': `Your peaceful aura evokes hues of aqua. This light green-blue color is associated with a refreshing energy of a river, and the tranquility and serenity of a calm blue lake. Aqua is a healing color, helping to calm the mind and body and enhance communication skills. Aqua is similar to turquoise, which is a gemstone believed by some to be a protector and bringer of good fortune. Take a chance today, and let the optimism of the color aqua keep you centered and hopeful! If you are feeling peaceful enough and looking to increase your energy, the Color Aura Explorer encourages you increase hues of orange, pink, or red in your life; watch a sunrise, eat an apple or a citrus fruit, or do some exercise to turn up the heat!`,
 
@@ -32,7 +39,7 @@ colorApp.paragraphs = {
 
     EADDCA: 'Your feelings of apathy today evoke hues of beige and brown. Beige is often associated with dullness, which may match your lethargic feelings today, but the neutrality of this color also represents calm, warmth, quiet and dependability. If you are looking to break through this apathetic feeling, try taking a walk outside and noting the world of colors around you. You might see the green of grass or trees, pink flowers, a neon-yellow tennis ball being chased by a black and white dog, or the orange of a monarch butterfly. Using your senses in this way brings up a multitude of thoughts of feelings and may alter your mood in some way!',
     
-    '708090': 'slate para',
+    '708090': 'Your lethargic mood emits grey shades from the Color Aura Explorer. If you haven’t already, get some rest! If you’re still feeling lethargic, maybe it’s time to move your body. It’s good to get some blood flowing to wake up your brain! Go for a walk or jog, dance to a music playlist, or follow a stretch routine from your favourite yogi. Afterwards, it might be a good idea to visit a coffee shop in your area that you haven’t visited before. The smell of coffee or tea brewing will wake up the senses.',
 
     '888B8D': ""
 }
