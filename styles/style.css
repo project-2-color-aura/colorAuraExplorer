@@ -256,7 +256,7 @@ button {
   font-family: "Archivo", sans-serif;
   font-size: 1.3rem;
   width: 230px;
-  height: 130px;
+  height: 100px;
   margin: 20px;
   background-color: linear-gradient(135deg, white, grey);
   border: none;
@@ -310,6 +310,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 h1 {
