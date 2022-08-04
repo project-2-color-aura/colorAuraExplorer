@@ -2,7 +2,7 @@
 
 Javascript | HTML | CSS/Sass | RESTful API <br>
 
-_A collaborative project between [Mel Peto](https://www.melpeto.com) and [Caroline Manalo](https://carolinemanalo.comdashin)_. <br>
+_A collaborative project between [Mel Peto](https://www.melpeto.com) and [Caroline Manalo](https://carolinemanalo.com)_. <br>
 
 How are you feeling today? Choose your emotion and get a reading from the Color Aura Explorer. This app uses fetch to pull a color scheme that matches your mood from a RESTful API, and provides some reflective advice and insight based on your mood today ;). Your aura is positively glowing! <br>
 
