@@ -21,11 +21,13 @@
             <h2>How are you feeling today?</h2>
             <p>Choose a word that best describes your mood today, and get a reading from the Color Aura Explorer:</p>
             <section class="allButtons">
-                <ul class="moodUl">
+                <ul class="moodUlTop">
                     <li><button class="moods" value="DC143C" id="Stressed">Stressed</button></li>
                     <li><button class="moods" value="FFC0CB" id="Romantic">Romantic</button></li>
                     <li><button class="moods" value="663399" id="Powerful">Powerful</button></li>
                     <li><button class="moods" value="000080" id="Mysterious">Mysterious</button></li>
+                </ul>
+                <ul class="moodUl">
                     <li><button class="moods" value="4682B4" id="Melancholic">Melancholic</button></li>
                     <li><button class="moods" value="00FFFF" id="Peaceful">Peaceful</button></li>
                     <li><button class="moods" value="228B22" id="Healthy">Healthy</button></li>
@@ -35,21 +37,22 @@
                     <li><button class="moods" value="EADDCA" id="Apathetic">Apathetic</button></li>
                     <li><button class="moods" value="708090" id="Lethargic">Lethargic</button></li>
                 </ul>
+
+                <section class="results resultsWrapper">
+                    <h2>Your color aura palette:</h2>
+                    <div class="paletteParent">
+                        <div class="color0 color"></div>
+                        <div class="color1 color"></div>
+                        <div class="color2 color"></div>
+                        <div class="color3 color"></div>
+                        <div class="color4 color"></div>
+                    </div>
+                    <div class="colorParagraphContainer">
+                        <h2 class="colorTitle"></h2>
+                        <p class="colorParagraph" tabindex="0"></p>
+                    </div>
+                </section>
                 <button class="reset moods" value="888B8D">RESET</button>
-            </section>
-            <section class="results">
-                <h2>Your color aura palette:</h2>
-                <div class="paletteParent">
-                    <div class="color0 color"></div>
-                    <div class="color1 color"></div>
-                    <div class="color2 color"></div>
-                    <div class="color3 color"></div>
-                    <div class="color4 color"></div>
-                </div>
-                <div class="colorParagraphContainer">
-                    <h2 class="colorTitle"></h2>
-                    <p class="colorParagraph" tabindex="0"></p>
-                </div>
             </section>
         </div>
     </main>

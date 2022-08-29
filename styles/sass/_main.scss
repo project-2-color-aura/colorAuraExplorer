@@ -4,16 +4,24 @@
     align-items: center;
 }
 
+.moodUlTop,
 .moodUl {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .moodUl li {
     text-align: center;
+    display: block;
+    max-width: 50%;
 }
+
+// .resultsWrapper {
+//     width: 70%;
+//     margin: 0 auto;
+// }
 
 .paletteParent {
     display: flex;
